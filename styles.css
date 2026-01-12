@@ -1,0 +1,644 @@
+/* Glass Navigation */
+.glass-nav {
+    background: rgba(10, 10, 11, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Circuit Background Pattern */
+.circuit-bg {
+    background-image: radial-gradient(circle at 2px 2px, rgba(19, 91, 236, 0.15) 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(19, 91, 236, 0.15) 0%, transparent 70%);
+}
+
+/* Icon Glow Effect */
+.icon-glow {
+    text-shadow: 0 0 10px rgba(19, 91, 236, 0.5);
+}
+
+/* Pro Card Glow */
+.pro-glow {
+    box-shadow: 0 0 40px -10px rgba(19, 91, 236, 0.3);
+}
+
+/* Button Styles */
+.btn-primary-outline {
+    border: 1px solid #135bec;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(19, 91, 236, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-outline:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary-outline:active {
+    transform: scale(0.95);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Large Button Styles */
+.btn-large-primary {
+    border: 1px solid rgba(19, 91, 236, 0.5);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-large-primary:hover {
+    background-color: rgba(19, 91, 236, 0.272);
+}
+
+.btn-large-secondary {
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    border:1px solid rgb(132 85 240 / 59%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-large-secondary:hover {
+    background-color: rgba(132 85 240 / 27%);
+}
+
+/* Pro Plan Button */
+.btn-pro-plan {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(19, 91, 236, 0.5);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 30px rgba(19, 91, 236, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-pro-plan:hover {
+    transform: scale(1.02);
+}
+
+/* Pro Plan Card */
+.pro-plan-card {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Integration Cards */
+.integration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* background-color: ; */
+    background:linear-gradient(135deg, rgb(31 72 163 / 15%), rgb(31 72 163 / 5%));
+    border: 1px solid rgba(68, 53, 209, 0.776);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.integration-card:hover {
+    border-color: rgba(19, 91, 236, 0.5);
+    background-color: rgba(19, 91, 236, 0.05);
+}
+
+/* Integration Icon Colors */
+.whatsapp-icon {
+    background-color: rgba(37, 211, 102, 0.2);
+    color: #25D366;
+}
+
+.telegram-icon {
+    background-color: rgba(0, 136, 204, 0.2);
+    color: #0088cc;
+}
+
+.instagram-icon {
+    background-color: rgba(225, 48, 108, 0.2);
+    color: #E1306C;
+}
+
+.facebook-icon {
+    background-color: rgba(24, 119, 242, 0.2);
+    color: #1877F2;
+}
+
+.gmail-icon {
+    background-color: rgba(234, 67, 53, 0.2);
+    color: #EA4335;
+}
+
+.googledrive-icon {
+    background-color: rgba(251, 188, 5, 0.2);
+    color: #FBBC05;
+}
+
+/* Integration Icon Base */
+.integration-icon-base {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.integration-card:hover .integration-icon-base {
+    transform: scale(1.1);
+}
+
+/* Status Card */
+.status-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 1.5rem;
+}
+
+.status-badge {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: rgba(34, 197, 94, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-badge-icon {
+    color: #22c55e;
+    font-size: 0.875rem;
+}
+
+/* Workflow Item */
+.workflow-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workflow-item.inactive {
+    opacity: 0.6;
+}
+
+.workflow-placeholder {
+    flex: 1;
+}
+
+.workflow-placeholder-line {
+    height: 0.5rem;
+    background-color: rgba(19, 91, 236, 0.2);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.workflow-placeholder-line-2 {
+    height: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+/* Stat Card */
+.stat-card {
+    height: 6rem;
+    border-radius: 0.75rem;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.stat-card-primary {
+    background: linear-gradient(to bottom right, rgba(19, 91, 236, 0.2), transparent);
+    border-color: rgba(19, 91, 236, 0.2);
+}
+
+.stat-card-purple {
+    background: linear-gradient(to bottom right, rgba(139, 92, 246, 0.2), transparent);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.stat-value-primary {
+    color: #135bec;
+}
+
+.stat-value-purple {
+    color: #8b5cf6;
+}
+
+.stat-label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+/* Process Step Card */
+.process-step-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    /* background-color: #161b26; */
+    background:linear-gradient(135deg, rgb(31 72 163 / 15%), rgb(31 72 163 / 5%));
+    border: 1px solid rgba(19, 91, 236, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.process-step-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.process-step-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.process-step-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-step-icon-primary {
+    background-color: rgba(19, 91, 236, 0.1);
+    border-color: rgba(19, 91, 236, 0.2);
+}
+
+.process-step-icon-purple {
+    background-color: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+.process-step-icon-primary-text {
+    color: #135bec;
+}
+
+.process-step-icon-purple-text {
+    color: #8b5cf6;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.75rem;
+    background-color: #161b26;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.pricing-card-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.25rem 1rem;
+    background-color: #135bec;
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 9999px;
+    box-shadow: 0 0 20px rgba(19, 91, 236, 0.5);
+}
+
+.pricing-card-title {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card-subtitle {
+    margin-bottom: 2rem;
+}
+
+.pricing-card-price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+.pricing-card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.pricing-card-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.pricing-card-feature-included {
+    color: #cbd5e1;
+}
+
+.pricing-card-feature-excluded {
+    color: #64748b;
+    text-decoration: line-through;
+}
+
+.pricing-card-button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.pricing-card-button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.pricing-card-button-accent {
+    border-color: rgba(139, 92, 246, 0.3);
+    color: #8b5cf6;
+}
+
+.pricing-card-button-accent:hover {
+    background-color: rgba(139, 92, 246, 0.05);
+}
+
+/* CTA Section */
+.cta-card {
+    /* background-color: #161b26; */
+    border: 1px solid #135bec;
+    padding: 3rem 5rem;
+    border-radius: 1.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-blur-top {
+    position: absolute;
+    top: -6rem;
+    right: -6rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: rgba(19, 91, 236, 0.2);
+    filter: blur(100px);
+    border-radius: 9999px;
+}
+
+.cta-blur-bottom {
+    position: absolute;
+    bottom: -6rem;
+    left: -6rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: rgba(139, 92, 246, 0.2);
+    filter: blur(100px);
+    border-radius: 9999px;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cta-button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(19, 91, 236, 0.5);
+    box-shadow: 0 0 30px rgba(19, 91, 236, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.cta-button-secondary {
+    
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    border-color: rgb(132 85 240 / 59%);
+}
+
+
+.cta-button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cta-footer {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.cta-footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-footer-icon {
+    color: #22c55e;
+}
+
+/* Footer Styles */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-brand-icon {
+    background-color: #135bec;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.footer-brand-icon-symbol {
+    color: white;
+    font-size: 0.875rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #135bec;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    background-color: rgba(19, 91, 236, 0.2);
+}
+
+.footer-social-icon-symbol {
+    font-size: 0.875rem;
+}
+
+.footer-divider {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-copyright {
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.footer-legal-link {
+    transition: color 0.3s ease;
+}
+
+.footer-legal-link:hover {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+    .cta-card {
+        padding: 3rem 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+    }
+    
+    .footer-divider {
+        flex-direction: column;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
