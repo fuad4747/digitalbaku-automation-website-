@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Start AI Chat | Workflow Auto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-dark": "#0a0a0b",
+                    },
+                    fontFamily: { "display": ["Manrope", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-dark font-display text-white min-h-screen flex flex-col">
+    
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-primary p-2 rounded-lg">
+                    <span class="material-symbols-outlined text-white">hub</span>
+                </div>
+                <h2 class="text-xl font-extrabold tracking-tight">Workflow <span class="text-primary">Auto</span></h2>
+            </a>
+        </div>
+    </header>
+
+    <main class="relative flex-1 flex items-center justify-center px-6 pt-20">
+        <div class="absolute inset-0 circuit-bg pointer-events-none opacity-40"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full hero-gradient pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-md w-full">
+            <div class="bg-card-dark/40 border border-[#135bec]/30 rounded-3xl p-8 backdrop-blur-xl shadow-2xl">
+                <div class="flex flex-col items-center text-center gap-6">
+                    <div class="integration-icon-base whatsapp-icon w-16 h-16 rounded-2xl">
+                        <span class="material-symbols-outlined text-4xl">chat_bubble</span>
+                    </div>
+                    
+                    <div>
+                        <h1 class="text-3xl font-extrabold mb-2">Start AI Chat</h1>
+                        <p class="text-slate-400">Enter your WhatsApp number to begin your automated experience.</p>
+                    </div>
+
+                    <div class="w-full space-y-4">
+                        <div class="relative">
+                            <!-- <input 
+                                type="tel" 
+                                id="phoneNumber"
+                                placeholder="e.g. 15551234567" 
+                                class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-primary transition-all"
+                            /> -->
+                        </div>
+                        
+                        <button type="button" onclick="sendWhatsAppMessage(event)" id="submitBtn" class="btn-large-primary w-full">
+    Begin AI Chat
+</button>
+                    </div>
+
+                    <p id="statusMsg" class="text-sm font-medium"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+    
+    <script>
+    function sendWhatsAppMessage(event) {
+        // 1. Prevent form submission/page refresh
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        // 2. The destination number
+        const cleanNumber = '15551529874';
+        
+        // 3. The message
+        const message = encodeURIComponent("Hello! I want to test the AI Automation.");
+        
+        // 4. Construct the URL
+        const whatsappUrl = `https://wa.me/${cleanNumber}?text=${message}`;
+
+        // 5. Open in a new tab (this is often more successful than location.href)
+        // This acts as a 'User Gesture' which bypasses most security blocks
+        window.open(whatsappUrl, '_blank');
+    }
+
+
+</script>
+</body>
+</html>
