@@ -649,8 +649,9 @@
   right: 40px;
   width: 60px;
   height: 60px;
-  background-color: #25d366;
-  color: #FFF;
+  /* background-color: #25d366; */
+  background-color:linear-gradient(135deg, rgb(31 72 163 / 15%), rgb(31 72 163 / 5%));
+  color:#135bec;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
